@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "shopping-list-app"
+version = "0.1.0"
+description = ""
+authors = ["alexeiepif <aled2093746@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.2.3"
+psycopg2-binary = "^2.9.10"
+pillow = "^11.2.1"
+djangorestframework = "^3.16.0"
+drf-nested-routers = "^0.94.2"
+djangorestframework-simplejwt = "^5.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+.idea/  # Если используете PyCharm или другие IDE JetBrains
+*.log
+*.sqlite3  # Ваш файл базы данных SQLite (db.sqlite3)
+/media/    # Загруженные пользователем медиа-файлы (обычно не хранятся в Git)
+
+# Django
+*.log
+*.pot
+*.mo
+*.html
+local_settings.py  # Если вы используете локальные настройкиgit add .
+db.sqlite3         # База данных SQLite
+
+# Poetry
+.venv/             # Если Poetry создает .venv внутри проекта
+poetry.lock        # Опционально, если хотите, чтобы каждый разработчик сам разрешал зависимости
