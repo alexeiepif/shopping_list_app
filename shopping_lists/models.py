@@ -23,7 +23,7 @@ class ShoppingListItem(models.Model):
     shopping_list = models.ForeignKey(
         ShoppingList, on_delete=models.CASCADE, related_name="items"
     )
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, blank=True)
     quantity = models.CharField(
         max_length=50, blank=True, null=True
     )  # Например: "2 шт", "1 кг"
@@ -45,6 +45,4 @@ class ShoppingListItem(models.Model):
         return f"{self.name} ({self.shopping_list.name})"
 
     class Meta:
-        ordering = [
-            "-created_at"
-        ]  # Сортировка элементов по дате создания (новые сверху)
+        ordering = ["created_at"]  # Сортировка элементов по дате создания (новые снизу)
